@@ -232,7 +232,7 @@ ul ul li {
 }
 
 .whyList p {
-  margin: 40px;
+  margin: 10px;
   font-size: 24px;
 }
 
@@ -333,7 +333,7 @@ ul ul li {
   color: black;
   display: flex;
   width: 100%;
-  height: 683px;
+  height: 100%;
 }
 
 .ketCategories {
@@ -633,16 +633,13 @@ ul ul li {
 /* Newsletter ▲  */
 
 .pageFooter {
-  background-color: white;
-  color: #2f241f;
-  display: flex;
   width: 100%;
   padding: 80px;
 }
 
 .innerFooter {
   display: flex;
-  flex-decoration: row;
+  flex-direction: row;
 }
 
 .paragraph {
@@ -837,7 +834,7 @@ ul ul li {
 
   .pagePatner {
     width: 100%;
-    height: 305px;
+    height: 240px;
   }
 
   .brandPatner {
@@ -867,7 +864,7 @@ ul ul li {
   }
 
   .patnerList {
-    margin-left: 15px;
+    margin-left: 0px;
     padding: 20px;
   }
 
@@ -900,11 +897,10 @@ ul ul li {
     color: black;
     display: flex;
     width: 100%;
-    height: 683px;
   }
 
   .ketCategories {
-    padding: 80px 10px 80px 0px;
+    padding: 24px 10px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -940,18 +936,20 @@ ul ul li {
 
   .ketImages {
     margin-left: 0px;
-    width: 304px;
-    height: 56px;
+    width: 402px;
+    height: 450px;
   }
 
   .ketImages .textCategories {
     font-size: 14px;
-    padding-bottom: 32px;
+    padding-bottom: 8px;
   }
 
   .ketImages h1 {
-    font-size: 18px;
-    padding-bottom: 32px;
+    font-size: 20px;
+    padding-bottom: 24px;
+    width: 214px;
+    text-align: center;
   }
 
   .categoriesDescription {
@@ -1001,4 +999,199 @@ ul ul li {
     font-size: 18px;
     width: 304px;
   }
+
+  .innerProductbest {
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productTitle p {
+    padding-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .productTitle h1 {
+    font-size: 18px;
+  }
+
+  .seeMore-button {
+    padding: 20px;
+  }
+
+  .seeMore {
+    font-size: 14px;
+  }
+
+  .product1 img {
+    display: none;
+  }
+
+  .imgProduct1 {
+    border-radius: 12px;
+    margin-left: 24px;
+    background-image: url(./images/Product2.png);
+    color: #fff;
+    width: 354px;
+    height: 472px;
+    background-size: cover;
+  }
+
+  .imgProduct1 h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .ketSpecial1 {
+    display: flex;
+    flex-direction: column;
+    padding: 318px 103px 36px 24px;
+  }
+
+  .imgProduct2 {
+    border-radius: 12px;
+    margin-left: 24px;
+    background-image: url(./images/Product3.png);
+    color: #fff;
+    width: 354px;
+    height: 472px;
+    background-size: cover;
+  }
+
+  .imgProduct2 h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .ketSpecial2 .price {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    color: black;
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 24px;
+    width: 60px;
+  }
+
+  .ketSpecial2 {
+    display: flex;
+    flex-direction: column;
+    padding: 318px 103px 36px 24px;
+  }
+
+  .specialProduct2 img {
+    display: none;
+  }
+
+  .product4 img {
+    display: none;
+  }
+
+  .product5 img {
+    display: none;
+  }
+
+  .pageNewsletter {
+    height: 300px;
+  }
+
+  .innerNewsletter {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .taglineNews p {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  .taglineNews h1 {
+    font-size: 18px;
+    padding-bottom: 24px;
+  }
+
+  .inputMail {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .theInput {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    width: 256px;
+    height: 48px;
+    border-radius: 12px 0px 0px 12px;
+  }
+
+  .buttonSend {
+    background-color: #e5f0b6;
+    width: 15px;
+    height: 15px;
+    padding: 32px 30px;
+    border-radius: 0px 12px 12px 0px;
+  }
+
+  /* --------------------- */
+  
+  .pageFooter {
+    height: 723px;
+    padding: 35px 0px;
+  }
+  
+  .innerFooter {
+    flex-direction: column;
+  }
+
+  .contentFooter {
+    padding-bottom: 35px
+  }
+
+  .paragraph {
+    padding-bottom: 50px;
+    width: 400px;
+    height: 96px;
+  }
+  
+  .linkFooter {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 0px;
+  }
+  
+  .Support {
+    padding-right: 0px;
+  }
+  
+  .socialMedia {
+    padding-right: 0px;
+  }
+  
+  .aboutUs {
+    padding-right: 0px;
+  }
+  
+  .Support ul li {
+    display: flex;
+    flex-decoration: column;
+    padding-top: 0px;
+  }
+  
+  .socialMedia ul li {
+    display: flex;
+    flex-decoration: column;
+  }
+  
+  .aboutUs ul li {
+    display: flex;
+    flex-decoration: column;
+  }
+  
+
+
 }
+
