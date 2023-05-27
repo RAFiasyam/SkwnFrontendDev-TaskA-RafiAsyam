@@ -1,0 +1,1004 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&display=swap");
+
+* {
+  margin: 0px;
+  font-family: "Inter";
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.pageHeader {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+li {
+  font-size: 16px;
+  font-color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.signUp {
+  font-size: 16px;
+  padding: 15px;
+  width: 107px;
+  height: 48px;
+  margin-right: 16px;
+  list-style-type: none;
+  font-color: black;
+  border: none;
+  background: #e5f0b6;
+  border-radius: 8px;
+}
+
+.ActionBar {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  position: relative;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+ul ul {
+  position: absolute;
+  min-width: auto;
+  background: white;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  nav div {
+    display: block;
+  }
+  ul {
+    display: none;
+    position: static;
+    background: white;
+  }
+  ul li {
+    display: block;
+  }
+  ul ul {
+    position: static;
+    background: white;
+  }
+}
+/* Header ▲ */
+
+.pageHero {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 142px;
+}
+
+.title h1 {
+  font-size: 72px;
+  color: #2f241f;
+  width: 712px;
+  height: 261px;
+}
+
+.buttonHero {
+  display: flex;
+  padding-top: 48px;
+  color: #2f241f;
+  flex-direction: row;
+}
+
+.watchVideos-button {
+  border: 2px solid #2f241f;
+  background: white;
+  padding: 22px 62px;
+  width: 255px;
+  border-radius: 8px;
+  font-size: 24px;
+  margin-left: 24px;
+}
+
+.watchVideos {
+  font-size: 24px;
+  margin-left: 19px;
+}
+
+.searchCatalog-button {
+  display: flex;
+  flex-direction: row;
+  padding: 22px 48px;
+  width: 280px;
+  color: #2f241f;
+  border: none;
+  background: #e5f0b6;
+  border-radius: 8px;
+}
+
+.searchCatalog {
+  font-size: 24px;
+  margin-left: 19px;
+}
+
+.simpleProduct {
+  background-image: url(./images/kursiHero.png);
+  margin-left: 64px;
+  width: 522px;
+  height: 709px;
+}
+
+.ketProduct {
+  display: flex;
+  padding-left: 48px;
+  margin-top: 410px;
+  margin-bottom: 87px;
+  flex-direction: column;
+}
+
+.ketProduct .price {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 24px;
+  width: 60px;
+}
+
+.theProduct {
+  color: white;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.viewDetails {
+  padding: 15px 24px;
+  font: 16px;
+  background-color: #2f241f;
+  color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  width: 190px;
+}
+
+/* Hero ▲ */
+
+.pageChoose {
+  background-color: #2f241f;
+  color: #e5f0b6;
+  display: flex;
+  width: 100%;
+  height: 486px;
+}
+
+.whyList {
+  padding: 72px 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.whyList p {
+  margin: 40px;
+  font-size: 24px;
+}
+
+.whyList h1 {
+  margin-bottom: 40px;
+  font-size: 64px;
+}
+
+.brandingList {
+  display: flex;
+  flex-direction: row;
+}
+
+.brandingList div {
+  padding-top: 10px;
+  padding-right: 16px;
+}
+
+.manufactured {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  width: 370px;
+  height: 72px;
+}
+
+.years {
+  display: flex;
+  flex-direction: row;
+  padding-left: 70px;
+  font-weight: bold;
+  width: 370px;
+  height: 72px;
+}
+
+.expertise {
+  display: flex;
+  flex-direction: row;
+  padding-left: 70px;
+  font-weight: bold;
+  width: 350px;
+  height: 72px;
+}
+
+.expertise p {
+  margin-top: 15px;
+}
+
+/* brand choose ▲  */
+
+.pagePatner {
+  background-color: #fcfafa;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 305px;
+}
+
+.brandPatner {
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.numDua {
+  display: flex;
+  flex-direction: column;
+  color: #2f241f;
+  width: 245px;
+}
+
+.numDua h1 {
+  font-size: 96px;
+}
+
+.numDua p {
+  font-size: 24px;
+}
+
+.patnerList {
+  display: flex;
+  flex-direction: row;
+}
+
+.patnerList {
+  margin-left: 150px;
+  padding: 50px;
+}
+
+.patnerList div {
+  padding-left: 83px;
+}
+
+/* brand Patner ▲  */
+
+.pageCategories {
+  background-color: white;
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 683px;
+}
+
+.ketCategories {
+  padding: 80px 10px 80px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagesList {
+  display: flex;
+  flex-decoration: row;
+}
+
+.imagesList img {
+  border-radius: 12px;
+  margin-left: 24px;
+}
+
+.image1 img {
+  width: 148px;
+  height: 523px;
+  margin-left: 0px;
+  object-fit: cover;
+}
+
+.image2 img {
+  width: 148px;
+  height: 523px;
+  object-fit: cover;
+}
+
+.image3 img {
+  width: 472px;
+  height: 523px;
+  object-fit: cover;
+}
+
+.ketImages {
+  display: flex;
+  flex-direction: column;
+  margin-left: 48px;
+  width: 434px;
+  height: 523px;
+}
+
+.ketImages .textCategories {
+  font-size: 24px;
+  padding-bottom: 32px;
+}
+
+.ketImages h1 {
+  font-size: 48px;
+  padding-bottom: 32px;
+}
+
+.categoriesDescription {
+  display: flex;
+  flex-direction: column;
+  width: 433px;
+  height: 307px;
+}
+
+.bedRoom {
+  border-radius: 12px 12px 0px 0px;
+  background-color: #fcfafa;
+  padding: 20px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 433px;
+}
+
+.livingRoom {
+  background-color: #e5f0b6;
+  padding: 20px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 433px;
+}
+
+.ketLivingRoom {
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.homeOffice {
+  background-color: #fcfafa;
+  padding: 20px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 433px;
+}
+
+.gamingRoom {
+  border-radius: 0px 0px 12px 12px;
+  background-color: #fcfafa;
+  padding: 20px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 433px;
+}
+
+/* Categories/Furniture Sets Recommendations ▲  */
+
+.pageProductbest {
+  background-color: #2f241f;
+  color: #e5f0b6;
+  display: flex;
+  width: 100%;
+  height: 782px;
+}
+
+.innerProductbest {
+  padding: 80px 143px;
+  width: 1439px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productbestHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productTitle p {
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+
+.productTitle h1 {
+  font-size: 48px;
+}
+
+.seeMore-button {
+  padding: 20px;
+}
+
+.seeMore {
+  background: #e5f0b6;
+  padding: 14px 36px;
+  color: #2f241f;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.slideProductbest {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -270px;
+  width: 590px;
+}
+
+.slideProductbest img {
+  border-radius: 12px;
+  margin-left: 24px;
+}
+
+.product1 img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.imgProduct1 {
+  border-radius: 12px;
+  margin-left: 24px;
+  background-image: url(./images/Product2.png);
+  color: #fff;
+  width: 354px;
+  height: 472px;
+  background-size: cover;
+}
+
+.imgProduct1 h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.ketSpecial1 .price {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  color: black;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 24px;
+  width: 60px;
+}
+
+.ketSpecial1 {
+  display: flex;
+  flex-direction: column;
+  padding: 318px 103px 36px 24px;
+}
+
+.imgProduct2 {
+  border-radius: 12px;
+  margin-left: 24px;
+  background-image: url(./images/Product3.png);
+  color: #fff;
+  width: 354px;
+  height: 472px;
+  background-size: cover;
+}
+
+.imgProduct2 h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.ketSpecial2 .price {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  color: black;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 24px;
+  width: 60px;
+}
+
+.ketSpecial2 {
+  display: flex;
+  flex-direction: column;
+  padding: 318px 103px 36px 24px;
+}
+
+.specialProduct2 img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product4 img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product5 img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Product best seller ▲  */
+
+.pageNewsletter {
+  background-color: #fcfafa;
+  color: #2f241f;
+  display: flex;
+  width: 100%;
+  height: 514px;
+}
+
+.innerNewsletter {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 142px;
+}
+
+.taglineNews p {
+  font-size: 24px;
+  padding-bottom: 42px;
+}
+
+.taglineNews h1 {
+  font-size: 64px;
+  padding-bottom: 42px;
+}
+
+.inputMail {
+  display: flex;
+  flex-direction: row;
+}
+
+.theInput {
+  background-color: #fff;
+  padding: 22px 36px;
+  font-size: 24px;
+  border: none;
+  width: 503px;
+  height: 40px;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.buttonSend {
+  background-color: #e5f0b6;
+  width: 20px;
+  height: 20px;
+  padding: 32px 30px;
+  border-radius: 0px 12px 12px 0px;
+}
+
+/* Newsletter ▲  */
+
+.pageFooter {
+  background-color: white;
+  color: #2f241f;
+  display: flex;
+  width: 100%;
+  padding: 80px;
+}
+
+.innerFooter {
+  display: flex;
+  flex-decoration: row;
+}
+
+.paragraph {
+  width: 504px;
+  height: 137px;
+}
+
+.linkFooter {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding-left: 200px;
+}
+
+.Support {
+  padding-right: 52px;
+}
+
+.socialMedia {
+  padding-right: 52px;
+}
+
+.aboutUs {
+  padding-right: 52px;
+}
+
+.Support ul li {
+  display: flex;
+  flex-decoration: column;
+  padding-top: 0px;
+}
+
+.socialMedia ul li {
+  display: flex;
+  flex-decoration: column;
+}
+
+.aboutUs ul li {
+  display: flex;
+  flex-decoration: column;
+}
+
+/* Footer ▲  */
+
+@media screen and (max-width: 500px) {
+  * {
+    align-items: center;
+  }
+
+  .pageHeader {
+    width: 425px;
+    height: 64px;
+    padding: 16px;
+  }
+
+  .title {
+    margin: 32px 16px;
+    width: 342px;
+  }
+
+  .title h1 {
+    font-size: 32px;
+    height: 144px;
+    margin-right: 0px;
+    text-align: center;
+    width: 342px;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .ActionBar {
+    display: none;
+  }
+
+  .pageHero {
+    flex-direction: column;
+  }
+
+  .buttonHero {
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 265px;
+    height: 144px;
+    margin-right: 900px;
+  }
+
+  .searchCatalog-button {
+    width: 170px;
+    height: 56px;
+  }
+
+  .searchCatalog {
+    font-size: 14px;
+  }
+
+  .watchVideos {
+    font-size: 14px;
+  }
+
+  .watchVideos-button {
+    padding: 16px 50px;
+    width: 160px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+
+  .simpleProduct {
+    margin-left: 0px;
+    width: 424px;
+    object-fit: cover;
+    height: 233px;
+  }
+
+  .ketProduct {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 250px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+
+  .ketProduct .price {
+    margin-bottom: 8px;
+    justify-content: left;
+    font-size: 16px;
+    width: 40px;
+  }
+
+  .theProduct {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .viewDetails {
+    padding: 15px 24px;
+    font: 16px;
+    font-size: 12px;
+    width: 95px;
+  }
+
+  .pageChoose {
+    height: 470px;
+  }
+
+  .whyList {
+    padding: 22px 40px;
+    display: flex;
+    width: 327px;
+  }
+
+  .whyList p {
+    margin: 40px 10px;
+    font-size: 24px;
+  }
+
+  .whyList h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .brandingList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .manufactured {
+    padding-top: 16px;
+    font-weight: bold;
+    width: 370px;
+    height: 72px;
+  }
+
+  .years {
+    padding-top: 16px;
+    padding-left: 0px;
+    width: 370px;
+    height: 72px;
+  }
+
+  .expertise {
+    padding-top: 16px;
+    padding-left: 0px;
+    width: 370px;
+    height: 72px;
+  }
+
+  .pagePatner {
+    width: 100%;
+    height: 305px;
+  }
+
+  .brandPatner {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .numDua {
+    display: flex;
+    flex-direction: column;
+    color: #2f241f;
+    width: 245px;
+  }
+
+  .numDua h1 {
+    font-size: 24px;
+  }
+
+  .numDua p {
+    font-size: 14px;
+  }
+
+  .patnerList {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .patnerList {
+    margin-left: 15px;
+    padding: 20px;
+  }
+
+  .patnerList div {
+    padding-left: 30px;
+  }
+
+  .thePatner1 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .thePatner2 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .thePatner3 img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .thePatner4 img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .pageCategories {
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 683px;
+  }
+
+  .ketCategories {
+    padding: 80px 10px 80px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imagesList {
+    display: flex;
+    flex-decoration: row;
+  }
+
+  .imagesList img {
+    border-radius: 12px;
+    margin-left: 24px;
+  }
+
+  .image1 img {
+    width: 103.33px;
+    height: 132px;
+    margin-left: 0px;
+    object-fit: cover;
+  }
+
+  .image2 img {
+    width: 103.33px;
+    height: 132px;
+    object-fit: cover;
+  }
+
+  .image3 img {
+    width: 103.33px;
+    height: 132px;
+    object-fit: cover;
+  }
+
+  .ketImages {
+    margin-left: 0px;
+    width: 304px;
+    height: 56px;
+  }
+
+  .ketImages .textCategories {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+
+  .ketImages h1 {
+    font-size: 18px;
+    padding-bottom: 32px;
+  }
+
+  .categoriesDescription {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    height: 307px;
+  }
+
+  .bedRoom {
+    border-radius: 12px 12px 0px 0px;
+    background-color: #fcfafa;
+    padding: 20px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 304px;
+  }
+
+  .livingRoom {
+    background-color: #e5f0b6;
+    padding: 20px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 304px;
+    height: 121px;
+  }
+
+  .ketLivingRoom {
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .homeOffice {
+    background-color: #fcfafa;
+    padding: 20px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 304px;
+  }
+
+  .gamingRoom {
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fcfafa;
+    padding: 20px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 304px;
+  }
+}

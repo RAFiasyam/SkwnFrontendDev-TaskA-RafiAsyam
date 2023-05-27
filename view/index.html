@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniture</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("nav div").click(function () {
+        $("ul").slideToggle();
+        $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function () {
+        $(this).siblings().find("ul").slideUp();
+        $(this).find("ul").slideToggle();
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          $("ul").removeAttr("style");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="pageHeader">
+    <!-- Logo -->
+    <img src="asset/logo.svg" alt="logo" style="background-color: white" />
+    <!-- Navbar -->
+    <ul class="navBar">
+      <li><a href="#">About Us</a></li>
+      <li>
+        <a href="#">Furniture ▼</a>
+        <ul>
+          <li><a href="#">Product 1</a></li>
+          <li><a href="#">Product 2</a></li>
+          <li><a href="#">Product 3</a></li>
+        </ul>
+      </li>
+      <li><a href="">Partnerships</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <!-- Action -->
+    <div class="ActionBar">
+      <button class="signUp"><a href="">Sign Up</a></button>
+      <a href="#"><img src="asset/shope.svg" alt="logo" style="background-color: white" /></a>
+    </div>
+  </section>
+  <!-- Hero -->
+  <section class="pageHero">
+    <div class="title">
+      <h1>
+        The kind of <span style="color: #817253">furniture</span> you have
+        been looking for
+      </h1>
+      <div class="buttonHero">
+        <div class="searchCatalog-button">
+          <img src="asset/SearchIcon.svg" alt="search" />
+          <a href="#" class="searchCatalog" style="color: #2f241f">SEARCH CATALOG</a>
+        </div>
+        <div class="watchVideos-button">
+          <img src="asset/Play.svg" alt="play" />
+          <a href="#" class="watchVideos" style="color: #2f241f">WATCH VIDEOS</a>
+        </div>
+      </div>
+    </div>
+    <div class="simpleProduct">
+      <div class="ketProduct">
+        <div class="price">
+          <p>$329</p>
+        </div>
+        <p class="theProduct">Pösht Sofa</p>
+        <a href="#" class="viewDetails">VIEW DETAILS ></a>
+      </div>
+    </div>
+  </section>
+  <!-- Why choose us section -->
+  <section class="pageChoose">
+    <div class="whyList">
+      <p>WHY CHOOSE US?</p>
+      <h1>We care about details and the quality of our products</h1>
+      <div class="brandingList">
+        <div class="manufactured">
+          <div>
+            <img src="asset/iconsearch.svg" alt="icon" style="size: 5px" />
+          </div>
+          <p>MANUFACTURED WITH QUALITY MATERIALS</p>
+        </div>
+        <div class="years">
+          <div>
+            <img src="asset/icon5.svg" alt="icon" />
+          </div>
+          <p>5 YEARS OF WARRANTY FOR EACH PROFUCT</p>
+        </div>
+        <div class="expertise">
+          <div>
+            <img src="asset/icon20.svg" alt="icon" />
+          </div>
+          <p>20 YEARS OF EXPERTISE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partner -->
+  <section class="pagePatner">
+    <div class="brandPatner">
+      <div class="numDua">
+        <h1>25+</h1>
+        <p>PARTNERED BRANDS</p>
+      </div>
+      <div class="patnerList">
+        <div class="thePatner1">
+          <img src="asset/Gusto.svg" alt="" />
+        </div>
+        <div class="thePatner2">
+          <img src="asset/Stripe.svg" alt="" />
+        </div>
+        <div class="thePatner3">
+          <img src="asset/Treehouse.svg" alt="" />
+        </div>
+        <div class="thePatner4">
+          <img src="asset/Upwork.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Categories -->
+  <section class="pageCategories">
+    <div class="ketCategories">
+      <div class="imagesList">
+        <div class="image1">
+          <img src="images/Image1.png" alt="" />
+        </div>
+        <div class="image2">
+          <img src="images/Image2.png" alt="" />
+        </div>
+        <div class="image3">
+          <img src="images/Image3.png" alt="" />
+        </div>
+      </div>
+      <div class="ketImages">
+        <p class="textCategories">Categories</p>
+        <h1>Furniture Sets Recommendations</h1>
+        <div class="categoriesDescription">
+          <div class="bedRoom">
+            <p>Bedroom</p>
+          </div>
+          <div class="livingRoom">
+            <p>Living Room</p>
+            <p class="ketLivingRoom">
+              Enjoy a great living room aesthetics with your family Designs
+              created for increased comfortability
+            </p>
+          </div>
+          <div class="homeOffice">
+            <p>Home Office</p>
+          </div>
+          <div class="gamingRoom">
+            <p>Gaming Room</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Best Seller -->
+  <section class="pageProductbest">
+    <div class="innerProductbest">
+      <div class="productbestHeader">
+        <div class="productTitle">
+          <p>OUR PRODUCTS</p>
+          <h1>This month’s best seller</h1>
+        </div>
+        <a href="">
+          <div class="seeMore-button">
+            <div class="seeMore">
+              <p>SEE MORE</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="slideProductbest">
+        <div class="product1">
+          <img src="images/Product1.png" alt="" />
+        </div>
+        <div class="specialProduct1">
+          <div class="imgProduct1">
+            <div class="ketSpecial1">
+              <div class="price">
+                <p>$329</p>
+              </div>
+              <h1>Und Chair</h1>
+            </div>
+          </div>
+        </div>
+        <div class="specialProduct2">
+          <div class="imgProduct2">
+            <div class="ketSpecial2">
+              <div class="price">
+                <p>$329</p>
+              </div>
+              <h1>Sofa Und</h1>
+            </div>
+          </div>
+        </div>
+        <div class="product4">
+          <img src="images/Product4.png" alt="" />
+        </div>
+        <div class="product5">
+          <img src="images/Product5.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News Letter -->
+  <section class="pageNewsletter">
+    <div class="innerNewsletter">
+      <div class="taglineNews">
+        <p>LIMITED DEALS</p>
+        <h1>Become a member and get 10% off of your first purchase</h1>
+      </div>
+      <div class="inputMail">
+        <input type="text" placeholder="Enter your email here" class="theInput" />
+        <a href="">
+          <div class="buttonSend">
+            <img src="asset/Send.svg" alt="" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="pageFooter">
+    <div class="innerFooter">
+      <div class="contentFooter">
+        <img src="asset/logo.svg" alt="logo" style="width: 97.26px; height: 36px" />
+        <div class="paragraph" style="padding-top: 32px;">
+          <p>
+            Dekoor is a furniture company created to fulfill the needs of family
+            with aesthetic feeling in their furniture. Always pay attention to
+            details and give clear communication for the customers. Priority of
+            our design is comfortability.
+          </p>
+        </div>
+        <h4>©Copyright 2022 Dekoor</h4>
+      </div>
+      <div class="linkFooter">
+        <div class="Support" style="color: black;">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Shipping & Returns</a></li>
+            <li><a href="">Care guide</a></li>            
+            <li><a href="">Redeem warranty</a></li>
+          </ul>
+        </div>
+        <div class="socialMedia" style="color: black;">
+          <h5>Social Media</h5>
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>            
+            <li><a href="">TikTok</a></li>
+          </ul>
+        </div>
+        <div class="aboutUs" style="color: black;">
+          <h5>About Us</h5>
+          <ul>
+            <li><a href="">Our story</a></li>
+            <li><a href="">Designer</a></li>
+            <li><a href="">Craftmanship</a></li>            
+            <li><a href="">Sustainability</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
